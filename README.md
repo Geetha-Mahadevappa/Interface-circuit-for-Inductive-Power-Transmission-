@@ -26,3 +26,5 @@ of op-amp:
 
 3) BPF using op-amp LT1007, Butterworth filter 
 In order to get a narrower band for the BPF, a LPF-HPF combination was realized in Butterworth filter configuration. 
+
+Check out the design in 1.png, 2.png, 3.png files respectively. Resultant Sine wave is in result.png file.

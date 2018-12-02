@@ -10,7 +10,7 @@ One of the methods used for WPT is achieved by inductive power transmission thro
 primary coil. The induced voltage can be used to charge the battery or other circuits. Using primary and secondary coupled circuits can
 increase the induced magnetic field. 
 
-In this project, Direct Digital Synthesis method is used to generate an analog signal (sine wave). This generates a time-varying signal 
+In this project, DDS AD9850 was programmed using Arduino used to generate sine wave of 1 MHz, 1 Vpp which could be used for Wireless Power Transmission.. This generates a time-varying signal 
 in digital form then is converted by an internal DAC. The generated sinusoidal signal has an offset and noise which needs to be removed,
 so that it can be used for WPT. Arduino platform, is used to write the code for generation of sine wave. Arduino consists of a programmable 
 circuit board and software or IDE (Integrated Development Environment) 
@@ -28,3 +28,6 @@ of op-amp:
 In order to get a narrower band for the BPF, a LPF-HPF combination was realized in Butterworth filter configuration. 
 
 Check out the design in 1.png, 2.png, 3.png files respectively. Resultant Sine wave is in result.png file.
+ 
+The high pass filter output had attenuation. Voltage follower and inverting amplifier were used after low pass filter output, but voltage follower output had attenuation and inverting amplifier output had distortion, though the output magnitude was satisfactory. 
+ 
